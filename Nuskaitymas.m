@@ -61,7 +61,7 @@ fprintf( 1, '|         Pradedamas gintarø rûðiavimo procesas          |\n' );
 amberNr=0;
 class=0;
 classNr=10;
-classM=2;
+classM=2; % Klasës generavimo metodas
 
 fprintf(tmpLine);
 
@@ -75,7 +75,7 @@ while 1
     switch classM
         case 1
             class=classL(class,classNr);
-        case 2
+        otherwise
             class=classR(classNr);
     end
     % fwrite(s,class,'int8');
