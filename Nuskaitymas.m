@@ -54,20 +54,32 @@ fopen(s);
 %-------------------------------------------
 %-----PointGrey kameros apraðymas galas-----
 %-------------------------------------------
-tmpLine = '----------------------------------------------------------- \n';
+
+
+
+tmpLine = '------------------------------------------------------------------------------ \n';
 fprintf(tmpLine);
-fprintf( 1, '|         Pradedamas gintarø rûðiavimo procesas          |\n' );
+fprintf( 1, '|                  Pradedamas gintarø rûðiavimo procesas                   |\n' );
 
 amberNr=0;
 class=0;
 classNr=10;
 classM=2; % Klasës generavimo metodas
 
+
+% Klasiø konstruktorius
+for i=1:1:classNr
+    Gintaras(i) = GintarasClass();
+end
+
+
 fprintf(tmpLine);
 
 tMain=tic;
 
-timeInterval = 60;
+timeInterval = 5;
+tMainElapsed = 0;
+
 
 while tMainElapsed < timeInterval
     
@@ -83,9 +95,12 @@ while tMainElapsed < timeInterval
             class=classR(classNr);
     
     end
+    
+    Gintaras(class).kiekis = GintarasClass.klasesKiekis(Gintaras(class).kiekis);
+    
     % fwrite(s,class,'int8');
     tInerElapsed = toc(tIner);
-    fprintf('| Gintaras nr.: %2d | Klasë: %2d | Laikas: %2.8f sek. |\n', amberNr, class, tElapsed);
+    fprintf('| Gintaras nr.: %2d | Klasë: %2d | Viso klasëje: %2d | Laikas: %2.8f sek. |\n', amberNr, class, Gintaras(class).kiekis, tInerElapsed);
     fprintf(tmpLine);
     
     tMainElapsed = toc(tMain);    
