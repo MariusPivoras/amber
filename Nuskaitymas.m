@@ -65,9 +65,13 @@ classM=2; % Klasës generavimo metodas
 
 fprintf(tmpLine);
 
-while 1
+tMain=tic;
+
+timeInterval = 60;
+
+while tMainElapsed < timeInterval
     
-    tic;
+    tIner = tic;
     
     amberNr=amberNr+1;
     % Im= peekdata(vid,1);
@@ -77,12 +81,15 @@ while 1
             class=classL(class,classNr);
         otherwise
             class=classR(classNr);
+    
     end
     % fwrite(s,class,'int8');
-    
-    fprintf('| Gintaras nr.: %2d | Klasë: %2d | Laikas: %2.8f sek. |\n', amberNr, class, toc);
+    tInerElapsed = toc(tIner);
+    fprintf('| Gintaras nr.: %2d | Klasë: %2d | Laikas: %2.8f sek. |\n', amberNr, class, tElapsed);
     fprintf(tmpLine);
-        
+    
+    tMainElapsed = toc(tMain);    
+   
 end
 
 %------------------------
