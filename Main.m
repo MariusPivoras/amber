@@ -49,22 +49,20 @@ delete(instrfindall);
 %-------------------------------------------
 %-----PointGrey kameros apraðymas galas-----
 %-------------------------------------------
-
+fileID = fopen('log.txt','w');
 tmpLine = '-----------------------------------------------------------------------------------------------------------------  \n';
 fprintf(tmpLine);
+fprintf(fileID,tmpLine);
 fprintf( 1, '|                                    Pradedamas gintarø rûðiavimo procesas                                      |\n' );
+fprintf(fileID,'|                                    Pradedamas gintarø rûðiavimo procesas                                      |\n' );
+fprintf(tmpLine);
+fprintf(fileID,tmpLine);
 
 amberNr=0;
 class=0;
+
 classNr=5;
 classM=2; % Klasës generavimo metodas
-
-% Klasiø konstruktorius
-for i=1:1:classNr
-    Amber(i) = AmberClass();
-end
-
-fprintf(tmpLine);
 
 timeInterval = 60;
 tMainElapsed = 0;
@@ -74,6 +72,10 @@ pause
 tMain=tic;
 
 Im=[];
+% Klasiø konstruktorius
+for i=1:1:classNr
+    Amber(i) = AmberClass();
+end
 
 while tMainElapsed < timeInterval
     
@@ -103,20 +105,21 @@ while tMainElapsed < timeInterval
         Amber(class).sum = AmberClass.classCount(Amber(class).sum);
 
 %         fwrite(s,class,'int8');
-        amberNr=amberNr+1
+        amberNr=amberNr+1;
         tInerElapsed = toc(tIner);
         fprintf('| Gintaras nr.: %2d | Klasë: %2d | Viso klasëje: %2d | Iteracijos laikas: %2.4f sek. | Bendras laikas: %2.2f sek. |\n', amberNr, class, Amber(class).sum, tInerElapsed, tMainElapsed);
+        fprintf(fileID,'| Gintaras nr.: %2d | Klasë: %2d | Viso klasëje: %2d | Iteracijos laikas: %2.4f sek. | Bendras laikas: %2.2f sek. |\n', amberNr, class, Amber(class).sum, tInerElapsed, tMainElapsed);
         fprintf(tmpLine);
-        
+        fprintf(fileID,tmpLine);
 %         flushdata(vid, 'all'); % pasalina vaida is kameros
 %     end
     
-%     Im=[]; % pasalina vaizda
+%      Im=[]; % pasalina vaizda
     
     tMainElapsed = toc(tMain);
    
 end
-
+fclose(fileID);
 %------------------------
 %-----Klasë paeiliui-----
 %------------------------
