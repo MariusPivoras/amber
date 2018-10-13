@@ -81,9 +81,10 @@ while tMainElapsed < timeInterval
 %   Im=peekdata(vid,1);
     Im=imread('C:\Users\Marius\Desktop\Magistrinis_darbas\MatLab\Gintaru_foto\Image.1.1.106.jpg');
 %     if size(Im,1)~=0 % Tikrina ar yra vaizdas
-      
-     amberNr=amberNr+1;
+           ;
      Image=PreprocessImage(Im); % Vidutinis apdorojimo laikas priklauso nuo apdorojamos nuotruakos dydþio (prie 640x480 prisideda ~0.01 sek) .
+     
+     [p1,p2]=FindPoints(Image,1); % Apdorojimo laikas praktiðkai neátakoja bendro iteracijos apdorojimo laiko
 %    imshow(Image)
         switch classM
             case 1
@@ -95,6 +96,7 @@ while tMainElapsed < timeInterval
         Amber(class).sum = AmberClass.classCount(Amber(class).sum);
 
 %         fwrite(s,class,'int8');
+        amberNr=amberNr+1
         tInerElapsed = toc(tIner);
         fprintf('| Gintaras nr.: %2d | Klasë: %2d | Viso klasëje: %2d | Iteracijos laikas: %2.4f sek. | Bendras laikas: %2.2f sek. |\n', amberNr, class, Amber(class).sum, tInerElapsed, tMainElapsed);
         fprintf(tmpLine);
