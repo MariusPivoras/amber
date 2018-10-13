@@ -50,9 +50,9 @@ delete(instrfindall);
 %-----PointGrey kameros apraðymas galas-----
 %-------------------------------------------
 
-tmpLine = '------------------------------------------------------------------------------ \n';
+tmpLine = '-----------------------------------------------------------------------------------------------------------------  \n';
 fprintf(tmpLine);
-fprintf( 1, '|                  Pradedamas gintarø rûðiavimo procesas                   |\n' );
+fprintf( 1, '|                                    Pradedamas gintarø rûðiavimo procesas                                      |\n' );
 
 amberNr=0;
 class=0;
@@ -68,20 +68,23 @@ fprintf(tmpLine);
 
 timeInterval = 60;
 tMainElapsed = 0;
+
 pause
+
 tMain=tic;
+
 Im=[];
 
 while tMainElapsed < timeInterval
     
     tIner = tic;
 %   Im=peekdata(vid,1);
-    Im=imread('C:\Users\Marius\Desktop\Magistrinis_darbas\MatLab\Gintaru_foto\Image.1.39.1.jpg');
+    Im=imread('C:\Users\Marius\Desktop\Magistrinis_darbas\MatLab\Gintaru_foto\Image.1.1.106.jpg');
 %     if size(Im,1)~=0 % Tikrina ar yra vaizdas
       
      amberNr=amberNr+1;
-     Image=PreprocessImage(Im);
-     imshow(Image)
+     Image=PreprocessImage(Im); % Vidutinis apdorojimo laikas priklauso nuo apdorojamos nuotruakos dydþio (prie 640x480 prisideda ~0.01 sek) .
+%    imshow(Image)
         switch classM
             case 1
                 class=classL(class,classNr);
@@ -93,7 +96,7 @@ while tMainElapsed < timeInterval
 
 %         fwrite(s,class,'int8');
         tInerElapsed = toc(tIner);
-        fprintf('| Gintaras nr.: %2d | Klasë: %2d | Viso klasëje: %2d | Laikas: %2.8f sek. |\n', amberNr, class, Amber(class).sum, tInerElapsed);
+        fprintf('| Gintaras nr.: %2d | Klasë: %2d | Viso klasëje: %2d | Iteracijos laikas: %2.4f sek. | Bendras laikas: %2.2f sek. |\n', amberNr, class, Amber(class).sum, tInerElapsed, tMainElapsed);
         fprintf(tmpLine);
         
 %         flushdata(vid, 'all'); % pasalina vaida is kameros
