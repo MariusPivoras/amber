@@ -79,12 +79,19 @@ while tMainElapsed < timeInterval
     
     tIner = tic;
 %   Im=peekdata(vid,1);
-    Im=imread('C:\Users\Marius\Desktop\Magistrinis_darbas\MatLab\Gintaru_foto\Image.1.1.106.jpg');
+    Im=imread('C:\Users\Marius\Desktop\Magistrinis_darbas\MatLab\Gintaru_foto\Image.1.1.84.jpg');
 %     if size(Im,1)~=0 % Tikrina ar yra vaizdas
-           ;
-     Image=PreprocessImage(Im); % Vidutinis apdorojimo laikas priklauso nuo apdorojamos nuotruakos dydþio (prie 640x480 prisideda ~0.01 sek) .
-     
+
+    Image=PreprocessImage(Im); % Vidutinis apdorojimo laikas priklauso nuo apdorojamos nuotruakos dydþio (prie 640x480 prisideda ~0.01 sek) .
+%     figure(1),imshow(Image)
+%     pause 
+%     MaskedImg = Im .* uint8(Image);
+%     figure(2),imshow(MaskedImg);
+%     pause
      [p1,p2]=FindPoints(Image,1); % Apdorojimo laikas praktiðkai neátakoja bendro iteracijos apdorojimo laiko
+     
+     DrawLines(Im,p1,p2);
+%    pause
 %    imshow(Image)
         switch classM
             case 1
