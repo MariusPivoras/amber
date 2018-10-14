@@ -77,13 +77,18 @@ for i=1:1:classNr
     Amber(i) = AmberClass();
 end
 
-while tMainElapsed < timeInterval
-    
+imagefiles = dir('C:\Users\Marius\Desktop\Magistrinis_darbas\MatLab\Gintaru_foto\*.jpg');      
+nfiles = length(imagefiles);
+
+
+% while tMainElapsed < timeInterval
+for ii=1:nfiles   
     tIner = tic;
 %   Im=peekdata(vid,1);
-    Im=imread('C:\Users\Marius\Desktop\Magistrinis_darbas\MatLab\Gintaru_foto\Image.1.1.84.jpg');
+%   Im=imread('C:\Users\Marius\Desktop\Magistrinis_darbas\MatLab\Gintaru_foto\Image.1.1.21.jpg');
 %     if size(Im,1)~=0 % Tikrina ar yra vaizdas
-
+    currentfilename = [imagefiles(ii).folder, '\', imagefiles(ii).name];
+    Im=imread(currentfilename);
     Image=PreprocessImage(Im); % Vidutinis apdorojimo laikas priklauso nuo apdorojamos nuotruakos dydþio (prie 640x480 prisideda ~0.01 sek) .
 %     figure(1),imshow(Image)
 %     pause 
@@ -93,7 +98,7 @@ while tMainElapsed < timeInterval
      [p1,p2]=FindPoints(Image,1); % Apdorojimo laikas praktiðkai neátakoja bendro iteracijos apdorojimo laiko
      
      DrawLines(Im,p1,p2);
-%    pause
+   pause
 %    imshow(Image)
         switch classM
             case 1

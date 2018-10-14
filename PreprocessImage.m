@@ -1,6 +1,6 @@
 function Image = PreprocessImage(Im)
 
-%   Image=imread('C:\Users\Marius\Desktop\Magistrinis_darbas\MatLab\Gintaru_foto\Image.1.1.84.jpg');
+%    Im=imread('C:\Users\Marius\Desktop\Magistrinis_darbas\MatLab\Gintaru_foto\Image.1.1.21.jpg');
 %   Konvertavimas á grayscale erdvæ
     Image = rgb2gray(Im);
 %   imshow(Image);
@@ -8,7 +8,7 @@ function Image = PreprocessImage(Im)
 %   Kontrasto padidinimas, atsispindinèiø objektø formos iðgavimui !!!!!!!!!(gali tekti koreguoti) 
 
 %   Pridëti erosion ðëðëliø panaikinimui (!!!!!!!!?)
-    Image = imadjust(Image,[0.6 1],[]);
+    Image = imadjust(Image,[0.4 1],[]);
 %   imshow(Image);
    
 %   Konvertavimas á binary erdvæ
@@ -27,4 +27,6 @@ function Image = PreprocessImage(Im)
 %   Erosion
     se = strel('disk',7,6);
     Image = imerode(Image,se);
+    imshow(Image);
+    
 end
