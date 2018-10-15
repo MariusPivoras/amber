@@ -77,7 +77,7 @@ for i=1:1:classNr
     Amber(i) = AmberClass();
 end
 
-imagefiles = dir('C:\Users\Marius\Desktop\Magistrinis_darbas\MatLab\Gintaru_foto\*.jpg');      
+imagefiles = dir('Gintaru_foto\*.jpg');      
 nfiles = length(imagefiles);
 
 
