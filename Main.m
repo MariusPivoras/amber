@@ -1,6 +1,7 @@
 %------------------------------------------------------
 %Gintarø rûðiavimas
-%Modifikuota: 2018-10-09
+%Modifikuota: 2018-10-16
+%Pagrindinë paleidþiamoji byla
 %------------------------------------------------------
 
 global vid;
@@ -72,6 +73,7 @@ pause
 tMain=tic;
 
 Im=[];
+
 % Klasiø konstruktorius
 for i=1:1:classNr
     Amber(i) = AmberClass();
@@ -81,7 +83,7 @@ imagefiles = dir('Gintaru_foto\*.jpg');
 nfiles = length(imagefiles);
 
 
-% while tMainElapsed < timeInterval
+while tMainElapsed < timeInterval
 for ii=1:nfiles   
     tIner = tic;
 %   Im=peekdata(vid,1);
@@ -97,7 +99,7 @@ for ii=1:nfiles
 %     pause
      [p1,p2]=FindPoints(Image,1); % Apdorojimo laikas praktiðkai neátakoja bendro iteracijos apdorojimo laiko
      
-     DrawLines(Im,p1,p2);
+     DrawLines(Image,p1,p2);
    pause
 %    imshow(Image)
         switch classM
@@ -117,14 +119,14 @@ for ii=1:nfiles
         fprintf(tmpLine);
         fprintf(fileID,tmpLine);
 %         flushdata(vid, 'all'); % pasalina vaida is kameros
-%     end
+    end
     
 %      Im=[]; % pasalina vaizda
     
     tMainElapsed = toc(tMain);
-   
+    fclose(fileID);
 end
-fclose(fileID);
+
 %------------------------
 %-----Klasë paeiliui-----
 %------------------------
