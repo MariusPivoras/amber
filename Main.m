@@ -121,7 +121,6 @@ for ii=1:nfiles
                 Amber(class).sum = AmberClass.classCount(Amber(class).sum);
 
         %         fwrite(s,class,'int8');
-                amberNr=amberNr+1;
                 tInerElapsed = toc(tIner);
                 fprintf('| Gintaras nr.: %2d | Klasë: %2d | Viso klasëje: %2d | Iteracijos laikas: %2.4f sek. | Bendras laikas: %2.2f sek. |\n', amberNr, class, Amber(class).sum, tInerElapsed, tMainElapsed);
                 fprintf(fileID,'| Gintaras nr.: %2d | Klasë: %2d | Viso klasëje: %2d | Iteracijos laikas: %2.4f sek. | Bendras laikas: %2.2f sek. |\n', amberNr, class, Amber(class).sum, tInerElapsed, tMainElapsed);
@@ -135,6 +134,7 @@ for ii=1:nfiles
             fprintf(tmpLine);
             fprintf(fileID,tmpLine);
             imwrite(Image,sprintf('Gintaras_bad_%d.jpg',amberBadNr));
+%              fwrite(s,100,'int8');
          end
     end
     
