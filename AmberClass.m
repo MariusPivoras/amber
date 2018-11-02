@@ -1,6 +1,7 @@
 classdef AmberClass
    properties
-      class
+      class=0
+      area=[]
       sum=0
    end
    methods (Static)

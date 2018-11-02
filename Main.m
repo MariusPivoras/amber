@@ -9,6 +9,7 @@ global s;
 
 clc;
 close all;
+clear all;
 
 %Panaikita serial porto konekcijas
 delete(instrfindall); 
@@ -63,6 +64,7 @@ amberNr=0;
 amberBadNr=0;
 class=0;
 Skip=0;
+MaxArea=50000;
 classNr=5;
 classM=2; % Klasës generavimo metodas
 
@@ -78,6 +80,15 @@ Im=[];
 % Klasiø konstruktorius
 for i=1:1:classNr
     Amber(i) = AmberClass();
+    Amber(i).class=i;
+    AreaLenght = MaxArea/classNr;
+    if Amber(i).class==1
+         Amber(i).area=[0, (i*AreaLenght)+(AreaLenght/2)-1]; 
+    elseif Amber(i).class==classNr
+         Amber(i).area=[(i*AreaLenght)-(AreaLenght/2), MaxArea*10]; 
+    else
+         Amber(i).area=[(i*AreaLenght)-(AreaLenght/2), (i*AreaLenght)+(AreaLenght/2)-1];    
+    end
 end
 
 imagefiles = dir('Gintaru_foto\*.jpg');      
@@ -93,7 +104,7 @@ for ii=1:nfiles
     currentfilename = [imagefiles(ii).folder, '\', imagefiles(ii).name];
     
     Im=imread(currentfilename);
-    [Image, Skip]=PreprocessImage(Im); % Vidutinis apdorojimo laikas priklauso nuo apdorojamos nuotruakos dydþio (prie 640x480 prisideda ~0.01 sek) .
+    [Image, Skip, Area]=PreprocessImage(Im); % Vidutinis apdorojimo laikas priklauso nuo apdorojamos nuotruakos dydþio (prie 640x480 prisideda ~0.01 sek) .
     amberNr=amberNr+1;
 %     f1 = figure(1);
 %     screensize = get( groot, 'Screensize' );
@@ -106,18 +117,18 @@ for ii=1:nfiles
 %     pause
 
          if Skip == 0
-             [p1,p2]=FindPoints(Image,1); % Apdorojimo laikas praktiðkai neátakoja bendro iteracijos apdorojimo laiko
-
-             DrawLines(Image,p1,p2);
+%            [p1,p2]=FindPoints(Image,1); % Apdorojimo laikas praktiðkai neátakoja bendro iteracijos apdorojimo laiko
+%            DrawLines(Image,p1,p2);
 %            pause
-        %    imshow(Image)
-                switch classM
-                    case 1
-                        class=classL(class,classNr);
-                    otherwise
-                        class=classR(classNr);
-                end
-
+%            imshow(Image)
+%                 switch classM
+%                     case 1
+%                         class=classL(class,classNr);
+%                     otherwise
+%                         class=classR(classNr);
+%                 end
+                class = checkSize(Amber, Area, classNr);
+              
                 Amber(class).sum = AmberClass.classCount(Amber(class).sum);
 
         %         fwrite(s,class,'int8');
@@ -136,11 +147,13 @@ for ii=1:nfiles
             imwrite(Image,sprintf('Gintaras_bad_%d.jpg',amberBadNr));
 %              fwrite(s,100,'int8');
          end
+         tMainElapsed = toc(tMain);
+
     end
     
 %      Im=[]; % pasalina vaizda
     
-    tMainElapsed = toc(tMain);
+%     tMainElapsed = toc(tMain);
     fclose(fileID);
 % end
 

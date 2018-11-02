@@ -3,9 +3,9 @@
 %Modifikuota: 2018-11-02
 %Gintaro nuotraukos apdorojimas sàvybiø iðgavimui
 %------------------------------------------------------
-function [Image, Skip]= PreprocessImage(Im)
+function [Image, Skip, Area]= PreprocessImage(Im)
     Skip=0;
-%   Im=imread('C:\Users\Marius\Desktop\Magistrinis_darbas\MatLab\Gintaru_foto\Image.1.1.85.jpg');
+%   Im=imread('C:\Users\Marius\Desktop\Magistrinis_darbas\MatLab\Gintaru_foto\Image.1.1.135.jpg');
 %   Konvertavimas á grayscale erdvæ
     Image = rgb2gray(Im);
 %     imshow(Image);
@@ -36,14 +36,16 @@ function [Image, Skip]= PreprocessImage(Im)
 %     set(f1,'position',[-screensize(3)/2 0 screensize(3) screensize(4)])
 %     imshow(Image);
     [L,Num] = bwlabel(Image);
-    if Num == 1
-        stats = regionprops(Image,'orientation');
+    if Num < 2
+        stats = regionprops(Image,'orientation', 'Area');
         rotationAngle=stats.Orientation;
+        Area=stats.Area(1);
         Image = imrotate(Image, -rotationAngle);
     else
         Skip=1;
+        Area=0;
     end
 %     f2 = figure(2);
 %     set(f2,'position',[screensize(3)/2 0 screensize(3) screensize(4)])
-%    imshow(Image)
+%   imshow(Image)
 end
