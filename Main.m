@@ -60,8 +60,9 @@ fprintf(tmpLine);
 fprintf(fileID,tmpLine);
 
 amberNr=0;
+amberBadNr=0;
 class=0;
-
+Skip=0;
 classNr=5;
 classM=2; % Klasës generavimo metodas
 
@@ -83,49 +84,65 @@ imagefiles = dir('Gintaru_foto\*.jpg');
 nfiles = length(imagefiles);
 
 
-while tMainElapsed < timeInterval
+% while tMainElapsed < timeInterval
 for ii=1:nfiles   
     tIner = tic;
 %   Im=peekdata(vid,1);
 %   Im=imread('C:\Users\Marius\Desktop\Magistrinis_darbas\MatLab\Gintaru_foto\Image.1.1.21.jpg');
 %     if size(Im,1)~=0 % Tikrina ar yra vaizdas
     currentfilename = [imagefiles(ii).folder, '\', imagefiles(ii).name];
+    
     Im=imread(currentfilename);
-    Image=PreprocessImage(Im); % Vidutinis apdorojimo laikas priklauso nuo apdorojamos nuotruakos dydþio (prie 640x480 prisideda ~0.01 sek) .
-%     figure(1),imshow(Image)
-%     pause 
+    [Image, Skip]=PreprocessImage(Im); % Vidutinis apdorojimo laikas priklauso nuo apdorojamos nuotruakos dydþio (prie 640x480 prisideda ~0.01 sek) .
+    amberNr=amberNr+1;
+%     f1 = figure(1);
+%     screensize = get( groot, 'Screensize' );
+%     set(f1,'position',[-screensize(3)/2 0 screensize(3) screensize(4)])
+%     imshow(Im);
 %     MaskedImg = Im .* uint8(Image);
-%     figure(2),imshow(MaskedImg);
+%     f2 = figure(2);
+%     set(f2,'position',[screensize(3)/2 0 screensize(3) screensize(4)])
+%     imshow(MaskedImg)
 %     pause
-     [p1,p2]=FindPoints(Image,1); % Apdorojimo laikas praktiðkai neátakoja bendro iteracijos apdorojimo laiko
-     
-     DrawLines(Image,p1,p2);
-   pause
-%    imshow(Image)
-        switch classM
-            case 1
-                class=classL(class,classNr);
-            otherwise
-                class=classR(classNr);
-        end
 
-        Amber(class).sum = AmberClass.classCount(Amber(class).sum);
+         if Skip == 0
+             [p1,p2]=FindPoints(Image,1); % Apdorojimo laikas praktiðkai neátakoja bendro iteracijos apdorojimo laiko
 
-%         fwrite(s,class,'int8');
-        amberNr=amberNr+1;
-        tInerElapsed = toc(tIner);
-        fprintf('| Gintaras nr.: %2d | Klasë: %2d | Viso klasëje: %2d | Iteracijos laikas: %2.4f sek. | Bendras laikas: %2.2f sek. |\n', amberNr, class, Amber(class).sum, tInerElapsed, tMainElapsed);
-        fprintf(fileID,'| Gintaras nr.: %2d | Klasë: %2d | Viso klasëje: %2d | Iteracijos laikas: %2.4f sek. | Bendras laikas: %2.2f sek. |\n', amberNr, class, Amber(class).sum, tInerElapsed, tMainElapsed);
-        fprintf(tmpLine);
-        fprintf(fileID,tmpLine);
-%         flushdata(vid, 'all'); % pasalina vaida is kameros
+             DrawLines(Image,p1,p2);
+%            pause
+        %    imshow(Image)
+                switch classM
+                    case 1
+                        class=classL(class,classNr);
+                    otherwise
+                        class=classR(classNr);
+                end
+
+                Amber(class).sum = AmberClass.classCount(Amber(class).sum);
+
+        %         fwrite(s,class,'int8');
+                amberNr=amberNr+1;
+                tInerElapsed = toc(tIner);
+                fprintf('| Gintaras nr.: %2d | Klasë: %2d | Viso klasëje: %2d | Iteracijos laikas: %2.4f sek. | Bendras laikas: %2.2f sek. |\n', amberNr, class, Amber(class).sum, tInerElapsed, tMainElapsed);
+                fprintf(fileID,'| Gintaras nr.: %2d | Klasë: %2d | Viso klasëje: %2d | Iteracijos laikas: %2.4f sek. | Bendras laikas: %2.2f sek. |\n', amberNr, class, Amber(class).sum, tInerElapsed, tMainElapsed);
+                fprintf(tmpLine);
+                fprintf(fileID,tmpLine);
+        %         flushdata(vid, 'all'); % pasalina vaida is kameros
+         else
+            amberBadNr=amberBadNr+1;
+            fprintf('| Gintaras nr.: %2d | Klasë: Bad | Viso klasëje: %2d | Iteracijos laikas: %2.4f sek. | Bendras laikas: %2.2f sek. |\n', amberNr, amberBadNr, tInerElapsed, tMainElapsed);
+            fprintf(fileID,'| Gintaras nr.: %2d | Klasë: Bad | Viso klasëje: %2d | Iteracijos laikas: %2.4f sek. | Bendras laikas: %2.2f sek. |\n', amberNr, amberBadNr, tInerElapsed, tMainElapsed);
+            fprintf(tmpLine);
+            fprintf(fileID,tmpLine);
+            imwrite(Image,sprintf('Gintaras_bad_%d.jpg',amberBadNr));
+         end
     end
     
 %      Im=[]; % pasalina vaizda
     
     tMainElapsed = toc(tMain);
     fclose(fileID);
-end
+% end
 
 %------------------------
 %-----Klasë paeiliui-----

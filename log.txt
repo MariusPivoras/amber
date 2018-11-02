@@ -1,73 +1,295 @@
 -----------------------------------------------------------------------------------------------------------------  
 |                                    Pradedamas gintarø rûðiavimo procesas                                      |
 -----------------------------------------------------------------------------------------------------------------  
-| Gintaras nr.:  1 | Klasë:  5 | Viso klasëje:  1 | Iteracijos laikas: 2.9012 sek. | Bendras laikas: 0.00 sek. |
+| Gintaras nr.:  2 | Klasë:  5 | Viso klasëje:  1 | Iteracijos laikas: 0.2578 sek. | Bendras laikas: 0.00 sek. |
 -----------------------------------------------------------------------------------------------------------------  
-| Gintaras nr.:  2 | Klasë:  1 | Viso klasëje:  1 | Iteracijos laikas: 0.9117 sek. | Bendras laikas: 0.00 sek. |
+| Gintaras nr.:  4 | Klasë:  4 | Viso klasëje:  1 | Iteracijos laikas: 0.0909 sek. | Bendras laikas: 0.00 sek. |
 -----------------------------------------------------------------------------------------------------------------  
-| Gintaras nr.:  3 | Klasë:  5 | Viso klasëje:  2 | Iteracijos laikas: 1.1668 sek. | Bendras laikas: 0.00 sek. |
+| Gintaras nr.:  6 | Klasë:  2 | Viso klasëje:  1 | Iteracijos laikas: 0.0954 sek. | Bendras laikas: 0.00 sek. |
 -----------------------------------------------------------------------------------------------------------------  
-| Gintaras nr.:  4 | Klasë:  5 | Viso klasëje:  3 | Iteracijos laikas: 0.7869 sek. | Bendras laikas: 0.00 sek. |
+| Gintaras nr.:  8 | Klasë:  5 | Viso klasëje:  2 | Iteracijos laikas: 0.0945 sek. | Bendras laikas: 0.00 sek. |
 -----------------------------------------------------------------------------------------------------------------  
-| Gintaras nr.:  5 | Klasë:  3 | Viso klasëje:  1 | Iteracijos laikas: 0.8634 sek. | Bendras laikas: 0.00 sek. |
+| Gintaras nr.: 10 | Klasë:  1 | Viso klasëje:  1 | Iteracijos laikas: 0.0979 sek. | Bendras laikas: 0.00 sek. |
 -----------------------------------------------------------------------------------------------------------------  
-| Gintaras nr.:  6 | Klasë:  5 | Viso klasëje:  4 | Iteracijos laikas: 0.8888 sek. | Bendras laikas: 0.00 sek. |
+| Gintaras nr.: 12 | Klasë:  3 | Viso klasëje:  1 | Iteracijos laikas: 0.0926 sek. | Bendras laikas: 0.00 sek. |
 -----------------------------------------------------------------------------------------------------------------  
-| Gintaras nr.:  7 | Klasë:  1 | Viso klasëje:  2 | Iteracijos laikas: 1.3128 sek. | Bendras laikas: 0.00 sek. |
+| Gintaras nr.: 14 | Klasë:  2 | Viso klasëje:  2 | Iteracijos laikas: 0.0926 sek. | Bendras laikas: 0.00 sek. |
 -----------------------------------------------------------------------------------------------------------------  
-| Gintaras nr.:  8 | Klasë:  3 | Viso klasëje:  2 | Iteracijos laikas: 0.8541 sek. | Bendras laikas: 0.00 sek. |
+| Gintaras nr.: 16 | Klasë:  4 | Viso klasëje:  2 | Iteracijos laikas: 0.0922 sek. | Bendras laikas: 0.00 sek. |
 -----------------------------------------------------------------------------------------------------------------  
-| Gintaras nr.:  9 | Klasë:  5 | Viso klasëje:  5 | Iteracijos laikas: 0.8333 sek. | Bendras laikas: 0.00 sek. |
+| Gintaras nr.: 18 | Klasë:  4 | Viso klasëje:  3 | Iteracijos laikas: 0.0917 sek. | Bendras laikas: 0.00 sek. |
 -----------------------------------------------------------------------------------------------------------------  
-| Gintaras nr.: 10 | Klasë:  4 | Viso klasëje:  1 | Iteracijos laikas: 0.9957 sek. | Bendras laikas: 0.00 sek. |
+| Gintaras nr.: 20 | Klasë:  1 | Viso klasëje:  2 | Iteracijos laikas: 0.0944 sek. | Bendras laikas: 0.00 sek. |
 -----------------------------------------------------------------------------------------------------------------  
-| Gintaras nr.: 11 | Klasë:  5 | Viso klasëje:  6 | Iteracijos laikas: 2.6884 sek. | Bendras laikas: 0.00 sek. |
+| Gintaras nr.: 22 | Klasë:  3 | Viso klasëje:  2 | Iteracijos laikas: 0.0923 sek. | Bendras laikas: 0.00 sek. |
 -----------------------------------------------------------------------------------------------------------------  
-| Gintaras nr.: 12 | Klasë:  4 | Viso klasëje:  2 | Iteracijos laikas: 6.9856 sek. | Bendras laikas: 0.00 sek. |
+| Gintaras nr.: 24 | Klasë:  3 | Viso klasëje:  3 | Iteracijos laikas: 0.0911 sek. | Bendras laikas: 0.00 sek. |
 -----------------------------------------------------------------------------------------------------------------  
-| Gintaras nr.: 13 | Klasë:  1 | Viso klasëje:  3 | Iteracijos laikas: 0.8330 sek. | Bendras laikas: 0.00 sek. |
+| Gintaras nr.: 26 | Klasë:  4 | Viso klasëje:  4 | Iteracijos laikas: 0.0919 sek. | Bendras laikas: 0.00 sek. |
 -----------------------------------------------------------------------------------------------------------------  
-| Gintaras nr.: 14 | Klasë:  5 | Viso klasëje:  7 | Iteracijos laikas: 0.8334 sek. | Bendras laikas: 0.00 sek. |
+| Gintaras nr.: 28 | Klasë:  4 | Viso klasëje:  5 | Iteracijos laikas: 0.0933 sek. | Bendras laikas: 0.00 sek. |
 -----------------------------------------------------------------------------------------------------------------  
-| Gintaras nr.: 15 | Klasë:  5 | Viso klasëje:  8 | Iteracijos laikas: 1.1294 sek. | Bendras laikas: 0.00 sek. |
+| Gintaras nr.: 30 | Klasë:  4 | Viso klasëje:  6 | Iteracijos laikas: 0.0955 sek. | Bendras laikas: 0.00 sek. |
 -----------------------------------------------------------------------------------------------------------------  
-| Gintaras nr.: 16 | Klasë:  4 | Viso klasëje:  3 | Iteracijos laikas: 0.9207 sek. | Bendras laikas: 0.00 sek. |
+| Gintaras nr.: 32 | Klasë:  2 | Viso klasëje:  3 | Iteracijos laikas: 0.0956 sek. | Bendras laikas: 0.00 sek. |
 -----------------------------------------------------------------------------------------------------------------  
-| Gintaras nr.: 17 | Klasë:  4 | Viso klasëje:  4 | Iteracijos laikas: 0.9005 sek. | Bendras laikas: 0.00 sek. |
+| Gintaras nr.: 34 | Klasë:  4 | Viso klasëje:  7 | Iteracijos laikas: 0.0956 sek. | Bendras laikas: 0.00 sek. |
 -----------------------------------------------------------------------------------------------------------------  
-| Gintaras nr.: 18 | Klasë:  4 | Viso klasëje:  5 | Iteracijos laikas: 1.2809 sek. | Bendras laikas: 0.00 sek. |
+| Gintaras nr.: 36 | Klasë:  4 | Viso klasëje:  8 | Iteracijos laikas: 0.0961 sek. | Bendras laikas: 0.00 sek. |
 -----------------------------------------------------------------------------------------------------------------  
-| Gintaras nr.: 19 | Klasë:  2 | Viso klasëje:  1 | Iteracijos laikas: 0.7735 sek. | Bendras laikas: 0.00 sek. |
+| Gintaras nr.: 38 | Klasë:  1 | Viso klasëje:  3 | Iteracijos laikas: 0.0967 sek. | Bendras laikas: 0.00 sek. |
 -----------------------------------------------------------------------------------------------------------------  
-| Gintaras nr.: 20 | Klasë:  4 | Viso klasëje:  6 | Iteracijos laikas: 0.9501 sek. | Bendras laikas: 0.00 sek. |
+| Gintaras nr.: 40 | Klasë:  1 | Viso klasëje:  4 | Iteracijos laikas: 0.0940 sek. | Bendras laikas: 0.00 sek. |
 -----------------------------------------------------------------------------------------------------------------  
-| Gintaras nr.: 21 | Klasë:  1 | Viso klasëje:  4 | Iteracijos laikas: 1.5292 sek. | Bendras laikas: 0.00 sek. |
+| Gintaras nr.: 42 | Klasë:  3 | Viso klasëje:  4 | Iteracijos laikas: 0.0924 sek. | Bendras laikas: 0.00 sek. |
 -----------------------------------------------------------------------------------------------------------------  
-| Gintaras nr.: 22 | Klasë:  4 | Viso klasëje:  7 | Iteracijos laikas: 0.8417 sek. | Bendras laikas: 0.00 sek. |
+| Gintaras nr.: 44 | Klasë:  5 | Viso klasëje:  3 | Iteracijos laikas: 0.0925 sek. | Bendras laikas: 0.00 sek. |
 -----------------------------------------------------------------------------------------------------------------  
-| Gintaras nr.: 23 | Klasë:  1 | Viso klasëje:  5 | Iteracijos laikas: 0.9375 sek. | Bendras laikas: 0.00 sek. |
+| Gintaras nr.: 46 | Klasë:  2 | Viso klasëje:  4 | Iteracijos laikas: 0.0925 sek. | Bendras laikas: 0.00 sek. |
 -----------------------------------------------------------------------------------------------------------------  
-| Gintaras nr.: 24 | Klasë:  2 | Viso klasëje:  2 | Iteracijos laikas: 0.9372 sek. | Bendras laikas: 0.00 sek. |
+| Gintaras nr.: 48 | Klasë:  3 | Viso klasëje:  5 | Iteracijos laikas: 0.0936 sek. | Bendras laikas: 0.00 sek. |
 -----------------------------------------------------------------------------------------------------------------  
-| Gintaras nr.: 25 | Klasë:  1 | Viso klasëje:  6 | Iteracijos laikas: 0.8829 sek. | Bendras laikas: 0.00 sek. |
+| Gintaras nr.: 50 | Klasë:  2 | Viso klasëje:  5 | Iteracijos laikas: 0.0922 sek. | Bendras laikas: 0.00 sek. |
 -----------------------------------------------------------------------------------------------------------------  
-| Gintaras nr.: 26 | Klasë:  1 | Viso klasëje:  7 | Iteracijos laikas: 1.1042 sek. | Bendras laikas: 0.00 sek. |
+| Gintaras nr.: 52 | Klasë:  4 | Viso klasëje:  9 | Iteracijos laikas: 0.0927 sek. | Bendras laikas: 0.00 sek. |
 -----------------------------------------------------------------------------------------------------------------  
-| Gintaras nr.: 27 | Klasë:  5 | Viso klasëje:  9 | Iteracijos laikas: 1.0669 sek. | Bendras laikas: 0.00 sek. |
+| Gintaras nr.: 54 | Klasë:  2 | Viso klasëje:  6 | Iteracijos laikas: 0.0976 sek. | Bendras laikas: 0.00 sek. |
 -----------------------------------------------------------------------------------------------------------------  
-| Gintaras nr.: 28 | Klasë:  4 | Viso klasëje:  8 | Iteracijos laikas: 2.1422 sek. | Bendras laikas: 0.00 sek. |
+| Gintaras nr.: 56 | Klasë:  3 | Viso klasëje:  6 | Iteracijos laikas: 0.1005 sek. | Bendras laikas: 0.00 sek. |
 -----------------------------------------------------------------------------------------------------------------  
-| Gintaras nr.: 29 | Klasë:  2 | Viso klasëje:  3 | Iteracijos laikas: 1.2794 sek. | Bendras laikas: 0.00 sek. |
+| Gintaras nr.: 58 | Klasë:  4 | Viso klasëje: 10 | Iteracijos laikas: 0.0914 sek. | Bendras laikas: 0.00 sek. |
 -----------------------------------------------------------------------------------------------------------------  
-| Gintaras nr.: 30 | Klasë:  5 | Viso klasëje: 10 | Iteracijos laikas: 1.4669 sek. | Bendras laikas: 0.00 sek. |
+| Gintaras nr.: 60 | Klasë:  5 | Viso klasëje:  4 | Iteracijos laikas: 0.0922 sek. | Bendras laikas: 0.00 sek. |
 -----------------------------------------------------------------------------------------------------------------  
-| Gintaras nr.: 31 | Klasë:  1 | Viso klasëje:  8 | Iteracijos laikas: 10.5915 sek. | Bendras laikas: 0.00 sek. |
+| Gintaras nr.: 62 | Klasë:  5 | Viso klasëje:  5 | Iteracijos laikas: 0.0913 sek. | Bendras laikas: 0.00 sek. |
 -----------------------------------------------------------------------------------------------------------------  
-| Gintaras nr.: 32 | Klasë:  3 | Viso klasëje:  3 | Iteracijos laikas: 1.1754 sek. | Bendras laikas: 0.00 sek. |
+| Gintaras nr.: 64 | Klasë:  3 | Viso klasëje:  7 | Iteracijos laikas: 0.0949 sek. | Bendras laikas: 0.00 sek. |
 -----------------------------------------------------------------------------------------------------------------  
-| Gintaras nr.: 33 | Klasë:  2 | Viso klasëje:  4 | Iteracijos laikas: 0.8497 sek. | Bendras laikas: 0.00 sek. |
+| Gintaras nr.: 66 | Klasë:  1 | Viso klasëje:  5 | Iteracijos laikas: 0.0922 sek. | Bendras laikas: 0.00 sek. |
 -----------------------------------------------------------------------------------------------------------------  
-| Gintaras nr.: 34 | Klasë:  4 | Viso klasëje:  9 | Iteracijos laikas: 1.1543 sek. | Bendras laikas: 0.00 sek. |
+| Gintaras nr.: 68 | Klasë:  1 | Viso klasëje:  6 | Iteracijos laikas: 0.0910 sek. | Bendras laikas: 0.00 sek. |
 -----------------------------------------------------------------------------------------------------------------  
-| Gintaras nr.: 35 | Klasë:  4 | Viso klasëje: 10 | Iteracijos laikas: 2.2756 sek. | Bendras laikas: 0.00 sek. |
+| Gintaras nr.: 70 | Klasë:  2 | Viso klasëje:  7 | Iteracijos laikas: 0.0924 sek. | Bendras laikas: 0.00 sek. |
+-----------------------------------------------------------------------------------------------------------------  
+| Gintaras nr.: 71 | Klasë: Bad | Viso klasëje:  1 | Iteracijos laikas: 0.0924 sek. | Bendras laikas: 0.00 sek. |
+-----------------------------------------------------------------------------------------------------------------  
+| Gintaras nr.: 73 | Klasë:  5 | Viso klasëje:  6 | Iteracijos laikas: 0.0915 sek. | Bendras laikas: 0.00 sek. |
+-----------------------------------------------------------------------------------------------------------------  
+| Gintaras nr.: 75 | Klasë:  2 | Viso klasëje:  8 | Iteracijos laikas: 0.0917 sek. | Bendras laikas: 0.00 sek. |
+-----------------------------------------------------------------------------------------------------------------  
+| Gintaras nr.: 77 | Klasë:  5 | Viso klasëje:  7 | Iteracijos laikas: 0.0915 sek. | Bendras laikas: 0.00 sek. |
+-----------------------------------------------------------------------------------------------------------------  
+| Gintaras nr.: 79 | Klasë:  2 | Viso klasëje:  9 | Iteracijos laikas: 0.0920 sek. | Bendras laikas: 0.00 sek. |
+-----------------------------------------------------------------------------------------------------------------  
+| Gintaras nr.: 81 | Klasë:  5 | Viso klasëje:  8 | Iteracijos laikas: 0.0920 sek. | Bendras laikas: 0.00 sek. |
+-----------------------------------------------------------------------------------------------------------------  
+| Gintaras nr.: 83 | Klasë:  2 | Viso klasëje: 10 | Iteracijos laikas: 0.0881 sek. | Bendras laikas: 0.00 sek. |
+-----------------------------------------------------------------------------------------------------------------  
+| Gintaras nr.: 85 | Klasë:  1 | Viso klasëje:  7 | Iteracijos laikas: 0.0923 sek. | Bendras laikas: 0.00 sek. |
+-----------------------------------------------------------------------------------------------------------------  
+| Gintaras nr.: 87 | Klasë:  2 | Viso klasëje: 11 | Iteracijos laikas: 0.0926 sek. | Bendras laikas: 0.00 sek. |
+-----------------------------------------------------------------------------------------------------------------  
+| Gintaras nr.: 89 | Klasë:  4 | Viso klasëje: 11 | Iteracijos laikas: 0.0911 sek. | Bendras laikas: 0.00 sek. |
+-----------------------------------------------------------------------------------------------------------------  
+| Gintaras nr.: 91 | Klasë:  3 | Viso klasëje:  8 | Iteracijos laikas: 0.0917 sek. | Bendras laikas: 0.00 sek. |
+-----------------------------------------------------------------------------------------------------------------  
+| Gintaras nr.: 93 | Klasë:  2 | Viso klasëje: 12 | Iteracijos laikas: 0.0958 sek. | Bendras laikas: 0.00 sek. |
+-----------------------------------------------------------------------------------------------------------------  
+| Gintaras nr.: 95 | Klasë:  5 | Viso klasëje:  9 | Iteracijos laikas: 0.0951 sek. | Bendras laikas: 0.00 sek. |
+-----------------------------------------------------------------------------------------------------------------  
+| Gintaras nr.: 97 | Klasë:  3 | Viso klasëje:  9 | Iteracijos laikas: 0.0926 sek. | Bendras laikas: 0.00 sek. |
+-----------------------------------------------------------------------------------------------------------------  
+| Gintaras nr.: 99 | Klasë:  3 | Viso klasëje: 10 | Iteracijos laikas: 0.0979 sek. | Bendras laikas: 0.00 sek. |
+-----------------------------------------------------------------------------------------------------------------  
+| Gintaras nr.: 101 | Klasë:  5 | Viso klasëje: 10 | Iteracijos laikas: 0.0984 sek. | Bendras laikas: 0.00 sek. |
+-----------------------------------------------------------------------------------------------------------------  
+| Gintaras nr.: 103 | Klasë:  2 | Viso klasëje: 13 | Iteracijos laikas: 0.0939 sek. | Bendras laikas: 0.00 sek. |
+-----------------------------------------------------------------------------------------------------------------  
+| Gintaras nr.: 105 | Klasë:  4 | Viso klasëje: 12 | Iteracijos laikas: 0.0931 sek. | Bendras laikas: 0.00 sek. |
+-----------------------------------------------------------------------------------------------------------------  
+| Gintaras nr.: 107 | Klasë:  4 | Viso klasëje: 13 | Iteracijos laikas: 0.0921 sek. | Bendras laikas: 0.00 sek. |
+-----------------------------------------------------------------------------------------------------------------  
+| Gintaras nr.: 109 | Klasë:  2 | Viso klasëje: 14 | Iteracijos laikas: 0.0934 sek. | Bendras laikas: 0.00 sek. |
+-----------------------------------------------------------------------------------------------------------------  
+| Gintaras nr.: 111 | Klasë:  3 | Viso klasëje: 11 | Iteracijos laikas: 0.0943 sek. | Bendras laikas: 0.00 sek. |
+-----------------------------------------------------------------------------------------------------------------  
+| Gintaras nr.: 113 | Klasë:  1 | Viso klasëje:  8 | Iteracijos laikas: 0.0934 sek. | Bendras laikas: 0.00 sek. |
+-----------------------------------------------------------------------------------------------------------------  
+| Gintaras nr.: 115 | Klasë:  1 | Viso klasëje:  9 | Iteracijos laikas: 0.0929 sek. | Bendras laikas: 0.00 sek. |
+-----------------------------------------------------------------------------------------------------------------  
+| Gintaras nr.: 117 | Klasë:  3 | Viso klasëje: 12 | Iteracijos laikas: 0.0904 sek. | Bendras laikas: 0.00 sek. |
+-----------------------------------------------------------------------------------------------------------------  
+| Gintaras nr.: 119 | Klasë:  4 | Viso klasëje: 14 | Iteracijos laikas: 0.0920 sek. | Bendras laikas: 0.00 sek. |
+-----------------------------------------------------------------------------------------------------------------  
+| Gintaras nr.: 121 | Klasë:  5 | Viso klasëje: 11 | Iteracijos laikas: 0.0929 sek. | Bendras laikas: 0.00 sek. |
+-----------------------------------------------------------------------------------------------------------------  
+| Gintaras nr.: 123 | Klasë:  1 | Viso klasëje: 10 | Iteracijos laikas: 0.0918 sek. | Bendras laikas: 0.00 sek. |
+-----------------------------------------------------------------------------------------------------------------  
+| Gintaras nr.: 125 | Klasë:  3 | Viso klasëje: 13 | Iteracijos laikas: 0.0926 sek. | Bendras laikas: 0.00 sek. |
+-----------------------------------------------------------------------------------------------------------------  
+| Gintaras nr.: 127 | Klasë:  3 | Viso klasëje: 14 | Iteracijos laikas: 0.0907 sek. | Bendras laikas: 0.00 sek. |
+-----------------------------------------------------------------------------------------------------------------  
+| Gintaras nr.: 129 | Klasë:  1 | Viso klasëje: 11 | Iteracijos laikas: 0.0911 sek. | Bendras laikas: 0.00 sek. |
+-----------------------------------------------------------------------------------------------------------------  
+| Gintaras nr.: 131 | Klasë:  2 | Viso klasëje: 15 | Iteracijos laikas: 0.0935 sek. | Bendras laikas: 0.00 sek. |
+-----------------------------------------------------------------------------------------------------------------  
+| Gintaras nr.: 133 | Klasë:  1 | Viso klasëje: 12 | Iteracijos laikas: 0.0932 sek. | Bendras laikas: 0.00 sek. |
+-----------------------------------------------------------------------------------------------------------------  
+| Gintaras nr.: 135 | Klasë:  4 | Viso klasëje: 15 | Iteracijos laikas: 0.0921 sek. | Bendras laikas: 0.00 sek. |
+-----------------------------------------------------------------------------------------------------------------  
+| Gintaras nr.: 137 | Klasë:  2 | Viso klasëje: 16 | Iteracijos laikas: 0.0911 sek. | Bendras laikas: 0.00 sek. |
+-----------------------------------------------------------------------------------------------------------------  
+| Gintaras nr.: 139 | Klasë:  3 | Viso klasëje: 15 | Iteracijos laikas: 0.0920 sek. | Bendras laikas: 0.00 sek. |
+-----------------------------------------------------------------------------------------------------------------  
+| Gintaras nr.: 141 | Klasë:  1 | Viso klasëje: 13 | Iteracijos laikas: 0.0919 sek. | Bendras laikas: 0.00 sek. |
+-----------------------------------------------------------------------------------------------------------------  
+| Gintaras nr.: 143 | Klasë:  4 | Viso klasëje: 16 | Iteracijos laikas: 0.0913 sek. | Bendras laikas: 0.00 sek. |
+-----------------------------------------------------------------------------------------------------------------  
+| Gintaras nr.: 145 | Klasë:  2 | Viso klasëje: 17 | Iteracijos laikas: 0.0926 sek. | Bendras laikas: 0.00 sek. |
+-----------------------------------------------------------------------------------------------------------------  
+| Gintaras nr.: 147 | Klasë:  4 | Viso klasëje: 17 | Iteracijos laikas: 0.0921 sek. | Bendras laikas: 0.00 sek. |
+-----------------------------------------------------------------------------------------------------------------  
+| Gintaras nr.: 149 | Klasë:  4 | Viso klasëje: 18 | Iteracijos laikas: 0.0922 sek. | Bendras laikas: 0.00 sek. |
+-----------------------------------------------------------------------------------------------------------------  
+| Gintaras nr.: 151 | Klasë:  4 | Viso klasëje: 19 | Iteracijos laikas: 0.1171 sek. | Bendras laikas: 0.00 sek. |
+-----------------------------------------------------------------------------------------------------------------  
+| Gintaras nr.: 153 | Klasë:  3 | Viso klasëje: 16 | Iteracijos laikas: 0.0961 sek. | Bendras laikas: 0.00 sek. |
+-----------------------------------------------------------------------------------------------------------------  
+| Gintaras nr.: 155 | Klasë:  1 | Viso klasëje: 14 | Iteracijos laikas: 0.0932 sek. | Bendras laikas: 0.00 sek. |
+-----------------------------------------------------------------------------------------------------------------  
+| Gintaras nr.: 157 | Klasë:  2 | Viso klasëje: 18 | Iteracijos laikas: 0.0936 sek. | Bendras laikas: 0.00 sek. |
+-----------------------------------------------------------------------------------------------------------------  
+| Gintaras nr.: 159 | Klasë:  5 | Viso klasëje: 12 | Iteracijos laikas: 0.0931 sek. | Bendras laikas: 0.00 sek. |
+-----------------------------------------------------------------------------------------------------------------  
+| Gintaras nr.: 161 | Klasë:  1 | Viso klasëje: 15 | Iteracijos laikas: 0.0912 sek. | Bendras laikas: 0.00 sek. |
+-----------------------------------------------------------------------------------------------------------------  
+| Gintaras nr.: 163 | Klasë:  5 | Viso klasëje: 13 | Iteracijos laikas: 0.0862 sek. | Bendras laikas: 0.00 sek. |
+-----------------------------------------------------------------------------------------------------------------  
+| Gintaras nr.: 165 | Klasë:  3 | Viso klasëje: 17 | Iteracijos laikas: 0.0969 sek. | Bendras laikas: 0.00 sek. |
+-----------------------------------------------------------------------------------------------------------------  
+| Gintaras nr.: 167 | Klasë:  5 | Viso klasëje: 14 | Iteracijos laikas: 0.0924 sek. | Bendras laikas: 0.00 sek. |
+-----------------------------------------------------------------------------------------------------------------  
+| Gintaras nr.: 169 | Klasë:  1 | Viso klasëje: 16 | Iteracijos laikas: 0.0924 sek. | Bendras laikas: 0.00 sek. |
+-----------------------------------------------------------------------------------------------------------------  
+| Gintaras nr.: 171 | Klasë:  3 | Viso klasëje: 18 | Iteracijos laikas: 0.0913 sek. | Bendras laikas: 0.00 sek. |
+-----------------------------------------------------------------------------------------------------------------  
+| Gintaras nr.: 173 | Klasë:  1 | Viso klasëje: 17 | Iteracijos laikas: 0.0995 sek. | Bendras laikas: 0.00 sek. |
+-----------------------------------------------------------------------------------------------------------------  
+| Gintaras nr.: 175 | Klasë:  5 | Viso klasëje: 15 | Iteracijos laikas: 0.0953 sek. | Bendras laikas: 0.00 sek. |
+-----------------------------------------------------------------------------------------------------------------  
+| Gintaras nr.: 177 | Klasë:  1 | Viso klasëje: 18 | Iteracijos laikas: 0.0929 sek. | Bendras laikas: 0.00 sek. |
+-----------------------------------------------------------------------------------------------------------------  
+| Gintaras nr.: 179 | Klasë:  4 | Viso klasëje: 20 | Iteracijos laikas: 0.0991 sek. | Bendras laikas: 0.00 sek. |
+-----------------------------------------------------------------------------------------------------------------  
+| Gintaras nr.: 181 | Klasë:  5 | Viso klasëje: 16 | Iteracijos laikas: 0.0981 sek. | Bendras laikas: 0.00 sek. |
+-----------------------------------------------------------------------------------------------------------------  
+| Gintaras nr.: 183 | Klasë:  5 | Viso klasëje: 17 | Iteracijos laikas: 0.1007 sek. | Bendras laikas: 0.00 sek. |
+-----------------------------------------------------------------------------------------------------------------  
+| Gintaras nr.: 185 | Klasë:  1 | Viso klasëje: 19 | Iteracijos laikas: 0.0947 sek. | Bendras laikas: 0.00 sek. |
+-----------------------------------------------------------------------------------------------------------------  
+| Gintaras nr.: 186 | Klasë: Bad | Viso klasëje:  2 | Iteracijos laikas: 0.0947 sek. | Bendras laikas: 0.00 sek. |
+-----------------------------------------------------------------------------------------------------------------  
+| Gintaras nr.: 188 | Klasë:  2 | Viso klasëje: 19 | Iteracijos laikas: 0.0912 sek. | Bendras laikas: 0.00 sek. |
+-----------------------------------------------------------------------------------------------------------------  
+| Gintaras nr.: 190 | Klasë:  2 | Viso klasëje: 20 | Iteracijos laikas: 0.0860 sek. | Bendras laikas: 0.00 sek. |
+-----------------------------------------------------------------------------------------------------------------  
+| Gintaras nr.: 192 | Klasë:  5 | Viso klasëje: 18 | Iteracijos laikas: 0.0922 sek. | Bendras laikas: 0.00 sek. |
+-----------------------------------------------------------------------------------------------------------------  
+| Gintaras nr.: 194 | Klasë:  3 | Viso klasëje: 19 | Iteracijos laikas: 0.0921 sek. | Bendras laikas: 0.00 sek. |
+-----------------------------------------------------------------------------------------------------------------  
+| Gintaras nr.: 196 | Klasë:  5 | Viso klasëje: 19 | Iteracijos laikas: 0.0921 sek. | Bendras laikas: 0.00 sek. |
+-----------------------------------------------------------------------------------------------------------------  
+| Gintaras nr.: 198 | Klasë:  1 | Viso klasëje: 20 | Iteracijos laikas: 0.0922 sek. | Bendras laikas: 0.00 sek. |
+-----------------------------------------------------------------------------------------------------------------  
+| Gintaras nr.: 200 | Klasë:  2 | Viso klasëje: 21 | Iteracijos laikas: 0.0924 sek. | Bendras laikas: 0.00 sek. |
+-----------------------------------------------------------------------------------------------------------------  
+| Gintaras nr.: 202 | Klasë:  1 | Viso klasëje: 21 | Iteracijos laikas: 0.0911 sek. | Bendras laikas: 0.00 sek. |
+-----------------------------------------------------------------------------------------------------------------  
+| Gintaras nr.: 204 | Klasë:  1 | Viso klasëje: 22 | Iteracijos laikas: 0.0922 sek. | Bendras laikas: 0.00 sek. |
+-----------------------------------------------------------------------------------------------------------------  
+| Gintaras nr.: 206 | Klasë:  5 | Viso klasëje: 20 | Iteracijos laikas: 0.0923 sek. | Bendras laikas: 0.00 sek. |
+-----------------------------------------------------------------------------------------------------------------  
+| Gintaras nr.: 208 | Klasë:  3 | Viso klasëje: 20 | Iteracijos laikas: 0.0946 sek. | Bendras laikas: 0.00 sek. |
+-----------------------------------------------------------------------------------------------------------------  
+| Gintaras nr.: 210 | Klasë:  3 | Viso klasëje: 21 | Iteracijos laikas: 0.0998 sek. | Bendras laikas: 0.00 sek. |
+-----------------------------------------------------------------------------------------------------------------  
+| Gintaras nr.: 212 | Klasë:  1 | Viso klasëje: 23 | Iteracijos laikas: 0.0926 sek. | Bendras laikas: 0.00 sek. |
+-----------------------------------------------------------------------------------------------------------------  
+| Gintaras nr.: 214 | Klasë:  5 | Viso klasëje: 21 | Iteracijos laikas: 0.0935 sek. | Bendras laikas: 0.00 sek. |
+-----------------------------------------------------------------------------------------------------------------  
+| Gintaras nr.: 216 | Klasë:  4 | Viso klasëje: 21 | Iteracijos laikas: 0.0945 sek. | Bendras laikas: 0.00 sek. |
+-----------------------------------------------------------------------------------------------------------------  
+| Gintaras nr.: 218 | Klasë:  2 | Viso klasëje: 22 | Iteracijos laikas: 0.0913 sek. | Bendras laikas: 0.00 sek. |
+-----------------------------------------------------------------------------------------------------------------  
+| Gintaras nr.: 220 | Klasë:  3 | Viso klasëje: 22 | Iteracijos laikas: 0.0909 sek. | Bendras laikas: 0.00 sek. |
+-----------------------------------------------------------------------------------------------------------------  
+| Gintaras nr.: 222 | Klasë:  3 | Viso klasëje: 23 | Iteracijos laikas: 0.0920 sek. | Bendras laikas: 0.00 sek. |
+-----------------------------------------------------------------------------------------------------------------  
+| Gintaras nr.: 224 | Klasë:  1 | Viso klasëje: 24 | Iteracijos laikas: 0.0909 sek. | Bendras laikas: 0.00 sek. |
+-----------------------------------------------------------------------------------------------------------------  
+| Gintaras nr.: 226 | Klasë:  2 | Viso klasëje: 23 | Iteracijos laikas: 0.0913 sek. | Bendras laikas: 0.00 sek. |
+-----------------------------------------------------------------------------------------------------------------  
+| Gintaras nr.: 228 | Klasë:  1 | Viso klasëje: 25 | Iteracijos laikas: 0.1187 sek. | Bendras laikas: 0.00 sek. |
+-----------------------------------------------------------------------------------------------------------------  
+| Gintaras nr.: 230 | Klasë:  1 | Viso klasëje: 26 | Iteracijos laikas: 0.0976 sek. | Bendras laikas: 0.00 sek. |
+-----------------------------------------------------------------------------------------------------------------  
+| Gintaras nr.: 232 | Klasë:  2 | Viso klasëje: 24 | Iteracijos laikas: 0.0917 sek. | Bendras laikas: 0.00 sek. |
+-----------------------------------------------------------------------------------------------------------------  
+| Gintaras nr.: 234 | Klasë:  3 | Viso klasëje: 24 | Iteracijos laikas: 0.0935 sek. | Bendras laikas: 0.00 sek. |
+-----------------------------------------------------------------------------------------------------------------  
+| Gintaras nr.: 236 | Klasë:  1 | Viso klasëje: 27 | Iteracijos laikas: 0.0929 sek. | Bendras laikas: 0.00 sek. |
+-----------------------------------------------------------------------------------------------------------------  
+| Gintaras nr.: 238 | Klasë:  5 | Viso klasëje: 22 | Iteracijos laikas: 0.0951 sek. | Bendras laikas: 0.00 sek. |
+-----------------------------------------------------------------------------------------------------------------  
+| Gintaras nr.: 240 | Klasë:  5 | Viso klasëje: 23 | Iteracijos laikas: 0.0946 sek. | Bendras laikas: 0.00 sek. |
+-----------------------------------------------------------------------------------------------------------------  
+| Gintaras nr.: 242 | Klasë:  3 | Viso klasëje: 25 | Iteracijos laikas: 0.0994 sek. | Bendras laikas: 0.00 sek. |
+-----------------------------------------------------------------------------------------------------------------  
+| Gintaras nr.: 244 | Klasë:  3 | Viso klasëje: 26 | Iteracijos laikas: 0.0999 sek. | Bendras laikas: 0.00 sek. |
+-----------------------------------------------------------------------------------------------------------------  
+| Gintaras nr.: 246 | Klasë:  2 | Viso klasëje: 25 | Iteracijos laikas: 0.0916 sek. | Bendras laikas: 0.00 sek. |
+-----------------------------------------------------------------------------------------------------------------  
+| Gintaras nr.: 248 | Klasë:  5 | Viso klasëje: 24 | Iteracijos laikas: 0.0914 sek. | Bendras laikas: 0.00 sek. |
+-----------------------------------------------------------------------------------------------------------------  
+| Gintaras nr.: 250 | Klasë:  2 | Viso klasëje: 26 | Iteracijos laikas: 0.0936 sek. | Bendras laikas: 0.00 sek. |
+-----------------------------------------------------------------------------------------------------------------  
+| Gintaras nr.: 252 | Klasë:  1 | Viso klasëje: 28 | Iteracijos laikas: 0.0920 sek. | Bendras laikas: 0.00 sek. |
+-----------------------------------------------------------------------------------------------------------------  
+| Gintaras nr.: 254 | Klasë:  4 | Viso klasëje: 22 | Iteracijos laikas: 0.0905 sek. | Bendras laikas: 0.00 sek. |
+-----------------------------------------------------------------------------------------------------------------  
+| Gintaras nr.: 256 | Klasë:  2 | Viso klasëje: 27 | Iteracijos laikas: 0.0912 sek. | Bendras laikas: 0.00 sek. |
+-----------------------------------------------------------------------------------------------------------------  
+| Gintaras nr.: 258 | Klasë:  2 | Viso klasëje: 28 | Iteracijos laikas: 0.0920 sek. | Bendras laikas: 0.00 sek. |
+-----------------------------------------------------------------------------------------------------------------  
+| Gintaras nr.: 260 | Klasë:  3 | Viso klasëje: 27 | Iteracijos laikas: 0.0945 sek. | Bendras laikas: 0.00 sek. |
+-----------------------------------------------------------------------------------------------------------------  
+| Gintaras nr.: 262 | Klasë:  1 | Viso klasëje: 29 | Iteracijos laikas: 0.0982 sek. | Bendras laikas: 0.00 sek. |
+-----------------------------------------------------------------------------------------------------------------  
+| Gintaras nr.: 264 | Klasë:  1 | Viso klasëje: 30 | Iteracijos laikas: 0.0919 sek. | Bendras laikas: 0.00 sek. |
+-----------------------------------------------------------------------------------------------------------------  
+| Gintaras nr.: 266 | Klasë:  5 | Viso klasëje: 25 | Iteracijos laikas: 0.0910 sek. | Bendras laikas: 0.00 sek. |
+-----------------------------------------------------------------------------------------------------------------  
+| Gintaras nr.: 268 | Klasë:  5 | Viso klasëje: 26 | Iteracijos laikas: 0.0974 sek. | Bendras laikas: 0.00 sek. |
+-----------------------------------------------------------------------------------------------------------------  
+| Gintaras nr.: 270 | Klasë:  3 | Viso klasëje: 28 | Iteracijos laikas: 0.0917 sek. | Bendras laikas: 0.00 sek. |
+-----------------------------------------------------------------------------------------------------------------  
+| Gintaras nr.: 272 | Klasë:  1 | Viso klasëje: 31 | Iteracijos laikas: 0.0917 sek. | Bendras laikas: 0.00 sek. |
+-----------------------------------------------------------------------------------------------------------------  
+| Gintaras nr.: 274 | Klasë:  2 | Viso klasëje: 29 | Iteracijos laikas: 0.0929 sek. | Bendras laikas: 0.00 sek. |
+-----------------------------------------------------------------------------------------------------------------  
+| Gintaras nr.: 276 | Klasë:  2 | Viso klasëje: 30 | Iteracijos laikas: 0.0930 sek. | Bendras laikas: 0.00 sek. |
+-----------------------------------------------------------------------------------------------------------------  
+| Gintaras nr.: 278 | Klasë:  5 | Viso klasëje: 27 | Iteracijos laikas: 0.0909 sek. | Bendras laikas: 0.00 sek. |
+-----------------------------------------------------------------------------------------------------------------  
+| Gintaras nr.: 280 | Klasë:  1 | Viso klasëje: 32 | Iteracijos laikas: 0.0901 sek. | Bendras laikas: 0.00 sek. |
+-----------------------------------------------------------------------------------------------------------------  
+| Gintaras nr.: 282 | Klasë:  1 | Viso klasëje: 33 | Iteracijos laikas: 0.0907 sek. | Bendras laikas: 0.00 sek. |
+-----------------------------------------------------------------------------------------------------------------  
+| Gintaras nr.: 284 | Klasë:  1 | Viso klasëje: 34 | Iteracijos laikas: 0.0935 sek. | Bendras laikas: 0.00 sek. |
+-----------------------------------------------------------------------------------------------------------------  
+| Gintaras nr.: 286 | Klasë:  4 | Viso klasëje: 23 | Iteracijos laikas: 0.0924 sek. | Bendras laikas: 0.00 sek. |
+-----------------------------------------------------------------------------------------------------------------  
+| Gintaras nr.: 288 | Klasë:  4 | Viso klasëje: 24 | Iteracijos laikas: 0.0909 sek. | Bendras laikas: 0.00 sek. |
+-----------------------------------------------------------------------------------------------------------------  
+| Gintaras nr.: 290 | Klasë:  4 | Viso klasëje: 25 | Iteracijos laikas: 0.0733 sek. | Bendras laikas: 0.00 sek. |
 -----------------------------------------------------------------------------------------------------------------  

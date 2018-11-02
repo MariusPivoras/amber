@@ -10,7 +10,7 @@ function DrawLines(Image,p1,p2)
 
     labels = {'Xmax','Ymid','Xmin','Ymid'};
 
-    plot(p1(1),p2(1),'y*')
+    plot(p1(1),p2(1),'g*')
     plot(p1(2),p2(2),'y*')
     plot(p1(3),p2(3),'y*')
     plot(p1(4),p2(4),'y*')
@@ -25,7 +25,7 @@ function DrawLines(Image,p1,p2)
 %     text(p1(3),p2(3),labels(3),'VerticalAlignment','bottom','HorizontalAlignment','left','Color','r')
 %     text(p1(4),p2(4),labels(4),'VerticalAlignment','top','HorizontalAlignment','left','Color','r')
 
-    line([p1(1),p1(2)],[p2(1),p2(2)],'Color','r','LineStyle','--')
+    line([p1(1),p1(2)],[p2(1),p2(2)],'Color','g','LineStyle','--')
     line([p1(2),p1(3)],[p2(2),p2(3)],'Color','r','LineStyle','--')
     line([p1(3),p1(4)],[p2(3),p2(4)],'Color','r','LineStyle','--')
     line([p1(4),p1(5)],[p2(4),p2(5)],'Color','r','LineStyle','--')
@@ -33,6 +33,7 @@ function DrawLines(Image,p1,p2)
     line([p1(6),p1(7)],[p2(6),p2(7)],'Color','r','LineStyle','--')
     line([p1(7),p1(8)],[p2(7),p2(8)],'Color','r','LineStyle','--')
     line([p1(8),p1(1)],[p2(8),p2(1)],'Color','r','LineStyle','--')
+  
 
     hold off
 
