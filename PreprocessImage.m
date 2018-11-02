@@ -36,7 +36,7 @@ function [Image, Skip, Area]= PreprocessImage(Im)
 %     set(f1,'position',[-screensize(3)/2 0 screensize(3) screensize(4)])
 %     imshow(Image);
     [L,Num] = bwlabel(Image);
-    if Num < 2
+    if Num == 1
         stats = regionprops(Image,'orientation', 'Area');
         rotationAngle=stats.Orientation;
         Area=stats.Area(1);
