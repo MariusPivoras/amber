@@ -65,7 +65,7 @@ amberBadNr=0;
 class=0;
 Skip=0;
 MaxArea=50000;
-classNr=5;
+classNr=10;
 classM=2; % Klasës generavimo metodas
 
 timeInterval = 60;
@@ -77,17 +77,23 @@ tMain=tic;
 
 Im=[];
 
+MaxIndex=20;
+MinIndex=12;
 % Klasiø konstruktorius
 for i=1:1:classNr
     Amber(i) = AmberClass();
     Amber(i).class=i;
     AreaLenght = MaxArea/classNr;
+    FormIndexLenght = (MaxIndex-MinIndex)/classNr;
     if Amber(i).class==1
          Amber(i).area=[0, (i*AreaLenght)+(AreaLenght/2)-1]; 
+         Amber(i).formIndex=[MinIndex, (i*FormIndexLenght)+(FormIndexLenght/2)-0.0001 + MinIndex]; 
     elseif Amber(i).class==classNr
          Amber(i).area=[(i*AreaLenght)-(AreaLenght/2), MaxArea*10]; 
+         Amber(i).formIndex=[(i*FormIndexLenght)-(FormIndexLenght/2)+MinIndex, MaxIndex*10]; 
     else
-         Amber(i).area=[(i*AreaLenght)-(AreaLenght/2), (i*AreaLenght)+(AreaLenght/2)-1];    
+         Amber(i).area=[(i*AreaLenght)-(AreaLenght/2), (i*AreaLenght)+(AreaLenght/2)-1];
+         Amber(i).formIndex=[(i*FormIndexLenght)-(FormIndexLenght/2)+MinIndex, (i*FormIndexLenght)+(FormIndexLenght/2)-0.0001+MinIndex]; 
     end
 end
 
@@ -104,7 +110,7 @@ for ii=1:nfiles
     currentfilename = [imagefiles(ii).folder, '\', imagefiles(ii).name];
     
     Im=imread(currentfilename);
-    [Image, Skip, Area]=PreprocessImage(Im); % Vidutinis apdorojimo laikas priklauso nuo apdorojamos nuotruakos dydþio (prie 640x480 prisideda ~0.01 sek) .
+    [Image, Skip, Area, Perimeter]=PreprocessImage(Im); % Vidutinis apdorojimo laikas priklauso nuo apdorojamos nuotruakos dydþio (prie 640x480 prisideda ~0.01 sek) .
     amberNr=amberNr+1;
 %     f1 = figure(1);
 %     screensize = get( groot, 'Screensize' );
@@ -127,8 +133,11 @@ for ii=1:nfiles
 %                     otherwise
 %                         class=classR(classNr);
 %                 end
-                class = checkSize(Amber, Area, classNr);
-              
+%                 class = checkSize(Amber, Area, classNr);
+                
+                formIndex = (Perimeter^2)/Area;
+                class = checkForm(Amber, formIndex, classNr);
+                
                 Amber(class).sum = AmberClass.classCount(Amber(class).sum);
 
         %         fwrite(s,class,'int8');
