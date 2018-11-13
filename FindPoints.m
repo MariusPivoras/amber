@@ -55,11 +55,11 @@ function [image]=FindPoints(image,level)
     distXMid1 = calculateDistance (xMidMax1, yMid1, xMidMin1, yMid1);
     distXMid2 = calculateDistance (xMidMax2, yMid2, xMidMin2, yMid2);
     
-    p1=[xMid1,xMid1,xMid2, xMid2, xMidMax1,xMidMin1, xMidMax2,xMidMin2];
-    p2=[yMidMax1,yMidMin1, yMidMax2, yMidMin2, yMid1, yMid1, yMid2, yMid2];
-        
-
-    DrawLines(image,p1,p2);
+%     p1=[xMid1,xMid1,xMid2, xMid2, xMidMax1,xMidMin1, xMidMax2,xMidMin2];
+%     p2=[yMidMax1,yMidMin1, yMidMax2, yMidMin2, yMid1, yMid1, yMid2, yMid2];
+%         
+% 
+%     DrawLines(image,p1,p2);
     
 %     imshow(image);
 %     pause
@@ -73,7 +73,40 @@ function [image]=FindPoints(image,level)
        image = flip(image ,1);
     end
     
+    [y1,x1] = find(image == 1);
+    
+    [xMinX,indX]=min(x1);
+    xMinY=y1(indX);
+    
+    [xMaxX,indX1]=max(x1);
+    xMaxY=y1(indX1);
+    
+    [yMinY,indY]=min(y1);
+    yMinX=x1(indY);
 
+    [yMaxY,indX1]=max(y1);
+    yMaxX=x1(indX1);
+
+
+    distX =  calculateDistance (xMinX, xMinY, xMaxX, xMaxY);
+    distY =  calculateDistance (yMinX, yMinY, yMaxX, yMaxY);
+    
+    xMid1=xMinX+(int16(distX/2));
+    tmp = find(x1==xMid1);
+    yMidMax1= y1(tmp(1));
+    yMidMin1= y1(tmp(end)); 
+    
+    yMid1=yMinY+(int16(distY/2));
+    tmp3 = find(y1==yMid1);
+    xMidMax1= x1(tmp3(1));
+    xMidMin1= x1(tmp3(end)); 
+    
+    p1=[xMidMax1, xMidMin1,xMid1,xMid1];
+    p2=[ yMid1, yMid1, yMidMax1, yMidMin1];
+        
+
+    DrawLines(image,p1,p2);
+    
 %    imshow(image)
 %    pause
 %     
