@@ -77,8 +77,8 @@ tMain=tic;
 
 Im=[];
 
-MaxIndex=20;
-MinIndex=12;
+MaxIndex=17;
+MinIndex=14;
 % Klasiø konstruktorius
 for i=1:1:classNr
     Amber(i) = AmberClass();
@@ -87,7 +87,7 @@ for i=1:1:classNr
     FormIndexLenght = (MaxIndex-MinIndex)/classNr;
     if Amber(i).class==1
          Amber(i).area=[0, (i*AreaLenght)+(AreaLenght/2)-1]; 
-         Amber(i).formIndex=[MinIndex, (i*FormIndexLenght)+(FormIndexLenght/2)-0.0001 + MinIndex]; 
+         Amber(i).formIndex=[0, (i*FormIndexLenght)+(FormIndexLenght/2)-0.0001 + MinIndex]; 
     elseif Amber(i).class==classNr
          Amber(i).area=[(i*AreaLenght)-(AreaLenght/2), MaxArea*10]; 
          Amber(i).formIndex=[(i*FormIndexLenght)-(FormIndexLenght/2)+MinIndex, MaxIndex*10]; 
@@ -127,14 +127,10 @@ for ii=1:nfiles
 %            DrawLines(Image,p1,p2);
 %            pause
 %            imshow(Image)
-%                 switch classM
-%                     case 1
-%                         class=classL(class,classNr);
-%                     otherwise
-%                         class=classR(classNr);
-%                 end
-%                 class = checkSize(Amber, Area, classNr);
-                
+
+                [Image]=FindPoints(Image,1);
+                imshow(Image);
+                pause
                 formIndex = (Perimeter^2)/Area;
                 class = checkForm(Amber, formIndex, classNr);
                 
@@ -147,6 +143,8 @@ for ii=1:nfiles
                 fprintf(tmpLine);
                 fprintf(fileID,tmpLine);
         %         flushdata(vid, 'all'); % pasalina vaida is kameros
+%         imshow(Im);
+%             pause
          else
             amberBadNr=amberBadNr+1;
             fprintf('| Gintaras nr.: %2d | Klasë: Bad | Viso klasëje: %2d | Iteracijos laikas: %2.4f sek. | Bendras laikas: %2.2f sek. |\n', amberNr, amberBadNr, tInerElapsed, tMainElapsed);
@@ -155,6 +153,8 @@ for ii=1:nfiles
             fprintf(fileID,tmpLine);
             imwrite(Image,sprintf('Gintaras_bad_%d.jpg',amberBadNr));
 %              fwrite(s,100,'int8');
+%             imshow(Im);
+%             pause
          end
          tMainElapsed = toc(tMain);
 

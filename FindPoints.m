@@ -3,66 +3,90 @@
 %Modifikuota: 2018-10-16
 %Taðkø koordinaèiø iðgavimas gintaro dydþiui ir formai apskaièiuoti
 %------------------------------------------------------
-function [p1,p2]=FindPoints(image,level)
+function [image]=FindPoints(image,level)
     
 %   Ektremaliø taðkø suradimas
 % Im=imread('C:\Users\Marius\Desktop\Magistrinis_darbas\MatLab\Gintaru_foto\Image.1.1.107.jpg');
 % image=PreprocessImage(Im);
-% 
+
 % imshow(image)
 % pause
     [y,x] = find(image == 1);
     
-    [xMin,indX]=min(x);
-    yXMin=y(indX);
+    [xMinX,indX]=min(x);
+    xMinY=y(indX);
     
-    [xMax,indX1]=max(x);
-    yXMax=y(indX1);
+    [xMaxX,indX1]=max(x);
+    xMaxY=y(indX1);
     
-    [yMin,indY]=min(y);
-    xYmin=x(indY);
+    [yMinY,indY]=min(y);
+    yMinX=x(indY);
 
-    [yMax,indX1]=max(y);
-    xYmax=x(indX1);
+    [yMaxY,indX1]=max(y);
+    yMaxX=x(indX1);
 
 
-    distX =  calculateDistance (xMin, yXMin, xMax, yXMax);
-    distY =  calculateDistance (xYmin, yMin, xYmax, yMax);
+    distX =  calculateDistance (xMinX, xMinY, xMaxX, xMaxY);
+    distY =  calculateDistance (yMinX, yMinY, yMaxX, yMaxY);
      
-    xMid1=xMin+(int16(distX/3));
+    xMid1=xMinX+(int16(distX/3));
     tmp = find(x==xMid1);
-    yMidMax= y(tmp(1));
-    yMidMin= y(tmp(end)); 
+    yMidMax1= y(tmp(1));
+    yMidMin1= y(tmp(end)); 
     
-    xMid2=xMin+((int16(distX/3))*2);
+    xMid2=xMinX+((int16(distX/3))*2);
     tmp2 = find(x==xMid2);
     yMidMax2= y(tmp2(1));
     yMidMin2= y(tmp2(end)); 
     
-    yMid1=yMin+(int16(distY/3));
+    yMid1=yMinY+(int16(distY/3));
     tmp3 = find(y==yMid1);
     xMidMax1= x(tmp3(1));
     xMidMin1= x(tmp3(end)); 
     
-    yMid2=yMin+((int16(distY/3))*2);
+    yMid2=yMinY+((int16(distY/3))*2);
     tmp4 = find(y==yMid2);
     xMidMax2= x(tmp4(1));
     xMidMin2= x(tmp4(end)); 
 %     
+    distYMid1 = calculateDistance(xMid1, yMidMax1, xMid1, yMidMin1);
+    distYMid2 = calculateDistance(xMid2, yMidMax2, xMid2, yMidMin2);
     
+    distXMid1 = calculateDistance (xMidMax1, yMid1, xMidMin1, yMid1);
+    distXMid2 = calculateDistance (xMidMax2, yMid2, xMidMin2, yMid2);
     
+    p1=[xMid1,xMid1,xMid2, xMid2, xMidMax1,xMidMin1, xMidMax2,xMidMin2];
+    p2=[yMidMax1,yMidMin1, yMidMax2, yMidMin2, yMid1, yMid1, yMid2, yMid2];
+        
+
+    DrawLines(image,p1,p2);
+    
+%     imshow(image);
+%     pause
+    if distYMid1 < distYMid2
+       image = flip(image ,2);
+    end
+%     imshow(image);
+%     pause
+    
+    if distXMid1 > distXMid2
+       image = flip(image ,1);
+    end
+    
+
+%    imshow(image)
+%    pause
 %     
 %     p1=[, xMidMax1,xMid1, xMid2, xMidMin1, xMid2, xMid1];
 %     p2=[  yMid1, yMidMax, yMidMax2,yMid1,  yMidMin2, yMidMin ];
     
-    p1=[xMidMax2, xMidMax1,xMid1, xMid2, xMidMin1, xMidMin2, xMid2, xMid1];
-    p2=[ yMid2, yMid1, yMidMax, yMidMax2,yMid1, yMid2, yMidMin2, yMidMin ];
-    
-%     DrawLines(image,p1,p2);
+%     p1=[xMidMax2, xMidMax1,xMid1, xMid2, xMidMin1, xMidMin2, xMid2, xMid1];
+%     p2=[ yMid2, yMid1, yMidMax, yMidMax2,yMid1, yMid2, yMidMin2, yMidMin ];
+
 end
 
 function dist = calculateDistance (x1, y1, x2, y2)
 
-    dist = sqrt((x1-x2)^2+(y1-y2)^2);
+    dist = sqrt(double((x1-x2)^2)+double((y1-y2)^2));
 
 end
