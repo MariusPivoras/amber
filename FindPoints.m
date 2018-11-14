@@ -11,7 +11,7 @@ function [image]=FindPoints(image,level)
 
 % imshow(image)
 % pause
-    [y,x] = find(image == 1);
+    [y,x] = find(image, level);
     
     [xMinX,indX]=min(x);
     xMinY=y(indX);
@@ -73,7 +73,16 @@ function [image]=FindPoints(image,level)
        image = flip(image ,1);
     end
     
-    [y1,x1] = find(image == 1);
+    
+    
+    [rows, columns] = find(image);
+    row1 = min(rows);
+    row2 = max(rows);
+    col1 = min(columns);
+    col2 = max(columns);
+    image = image(row1:row2, col1:col2);
+    
+    [y1,x1] = find(image==level);
     
     [xMinX,indX]=min(x1);
     xMinY=y1(indX);
@@ -105,7 +114,7 @@ function [image]=FindPoints(image,level)
     p2=[ yMid1, yMid1, yMidMax1, yMidMin1];
         
 
-    DrawLines(image,p1,p2);
+    DrawLines(image,p1,p2, xMid1, yMid1);
     
 %    imshow(image)
 %    pause
